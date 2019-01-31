@@ -37,7 +37,7 @@ for screens in range(0,screen_files_count):
       file_name='/tmp/.screenrc.FPU{0}.{1}'.format(screens,today)
       screen_file=open(file_name,'w+')
       print >>screen_file, "termcapinfo xterm* ti@:te@"
-      print >>screen_file, "defscrollback 20000"
+      print >>screen_file, "defscrollback 200000"
       print >>screen_file, "vbell off"
       print >>screen_file, "hardstatus alwayslastline"
       print >>screen_file, "hardstatus string \"%{=b kG}%-w%{= BW}%50>%n %t%{-}%+w%< %= | %{= kR}%c%A | %{=b kG} %H\""
