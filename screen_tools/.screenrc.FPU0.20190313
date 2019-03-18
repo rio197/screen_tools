@@ -1,0 +1,11 @@
+termcapinfo xterm* ti@:te@                                                                                                                                                                                                                   
+defscrollback 200000
+vbell off
+hardstatus alwayslastline
+hardstatus string "%{=b kG}%-w%{= BW}%50>%n %t%{-}%+w%< %= | %{= kR}%c%A | %{=b kG} %H"
+altscreen on
+zombie kr
+screen -t main0
+screen -t vm1 ssh vm1
+screen -t vm2 ssh vm2
+screen -t vm3 ssh vm3
