@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# Archived from Andriy P. and Alexandre F. at Intelerad Medical Systems
+# Archived from Andriy P. and Alexandre F. at IMS
 import ConfigParser
 import operator
 import io
