@@ -37,6 +37,6 @@ shell -$SHELL
 # defnonblock on
 
 screen -t main0
-screen -t vm1 ssh vm1
-screen -t vm2 ssh vm2
-screen -t vm3 ssh vm3
+screen -t vm1 ssh -o ServerAliveInterval=2 -o ServerAliveCountMax=7200 vm1
+screen -t vm2 ssh -o ServerAliveInterval=2 -o ServerAliveCountMax=7200 vm2
+screen -t vm3 ssh -o ServerAliveInterval=2 -o ServerAliveCountMax=7200 vm3
